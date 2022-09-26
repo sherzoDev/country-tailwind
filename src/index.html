@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TailwindCSS Flag Country</title>
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./tailwind.css">
+</head>
+
+<body class="dark:bg-dark-700">
+
+  <header class="header">
+    <div class="container mx-auto px-20">
+      <div class="header__wrapper flex justify-between py-5">
+        <a href="./index.html" class="header__logo">
+          <img src="../images/logo.svg" alt="Site Logo">
+        </a>
+        <button type="button" class="theme-btn">
+          Dark Mode
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container mx-auto px-20 mt-10">
+      <div class="wrapper">
+        <div class="site-inputs flex justify-between ">
+          <label class=" site-input flex items-center">
+            <span class="sr-only">Search</span>
+            <span class="search-icon">
+              <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12.5 11h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C13 2.9 10.1 0 6.5 0S0 2.9 0 6.5 2.9 13 6.5 13c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5Zm-6 0C4 11 2 9 2 6.5S4 2 6.5 2 11 4 11 6.5 9 11 6.5 11Z"
+                  fill="#848484" /></svg>
+            </span>
+            <input class="input-class" placeholder="Search for a country…" type="text" name="search" />
+          </label>
+          <div class="select">
+            <select class="user-select-region">
+              <option value="Filter by Region" selected disabled>Filter by Region</option>
+              <div class="option-div">
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+              </div>
+            </select>
+          </div>
+        </div>
+        <ul class="country-list flex flex-col mt-3">
+          <div class="item-1 flex justify-between">
+            <li class="country-item">
+              <a href="./germany.html">
+                <img src="../images/germany-flag.jpg" width="264" height="160" alt="Germany flag">
+              </a>
+              <div class="item-txt">
+                <a href="#">
+                  <h3 class="mb-3">Germany</h3>
+                  <p class="text-black mb-2"><strong>Population: </strong> 81,770,900</p>
+                  <p class="text-black mb-2"><strong>Region:</strong> Europe</p>
+                  <p class="text-black mb-2"><strong>Capital:</strong> Berlin</p>
+                </a>
+              </div>
+            </li>
+            <li class="country-item">
+              <img src="../images/usa-flag.jpg" width="264" height="160"
+                alt="USA flag">
+              <div class="item-txt">
+                <a href="#">
+                  <h3 class="mb-3">United States of America</h3>
+                  <p class="text-black mb-2"><strong>Population: </strong> 323,947,000</p>
+                  <p class="text-black mb-2"><strong>Region:</strong> Americas</p>
+                  <p class="text-black mb-2"><strong>Capital:</strong> Washington,D.C.</p>
+                </a>
+              </div>
+            </li>
+            <li class=" country-item">
+              <img src="../images/brazil-flag.jpg" width="264" height="160" alt="Brazil flag">
+              <div class="item-txt">
+                <a href="#">
+                  <h3 class="mb-3">Brazil</h3>
+                  <p class="text-black mb-2"><strong>Population: </strong> 206,135,839</p>
+                  <p class="text-black mb-2"><strong>Region:</strong> Americas</p>
+                  <p class="text-black mb-2"><strong>Capital:</strong> Brasilia</p>
+                </a>
+              </div>
+            </li>
+            <li class=" country-item">
+              <img src="../images/iceland-flag.jpg" width="264" height="160" alt="Iceland flag">
+              <div class="item-txt">
+                <a href="#">
+                  <h3 class="mb-3">Iceland</h3>
+                  <p class="text-black mb-2"><strong>Population: </strong> 334,300</p>
+                  <p class="text-black mb-2"><strong>Region:</strong> Europe</p>
+                  <p class="text-black mb-2"><strong>Capital:</strong> Reykjavík</p>
+                </a>
+              </div>
+            </li>
+          </div>
+          <div class="item-2 flex justify-between">
+            <li class=" country-item">
+              <img src="../images/afganistan-flag.jpg" width="264" height="160" alt="Afghanistan flag">
+              <div class="item-txt">
+                <a href="#">
+                  <h3 class="mb-3">Afghanistan</h3>
+                  <p class="text-black mb-2"><strong>Population: </strong> 27,657,145</p>
+                  <p class="text-black mb-2"><strong>Region:</strong> Asia</p>
+                  <p class="text-black mb-2"><strong>Capital:</strong> Kabul</p>
+                </a>
+              </div>
+            </li>
+            <li class=" country-item">
+              <img src="../images/aland-flag.jpg" width="264" height="160" alt="Aland Islands flag">
+              <div class="item-txt">
+                <a href="#">
+                  <h3 class="mb-3">Åland Islands</h3>
+                  <p class="text-black mb-2"><strong>Population: </strong> 28,875</p>
+                  <p class="text-black mb-2"><strong>Region:</strong> Europe</p>
+                  <p class="text-black mb-2"><strong>Capital:</strong> Mariehamn</p>
+                </a>
+              </div>
+            </li>
+            <li class=" country-item">
+              <img src="../images/albania-flag.jpg" height="160" alt=" Albania flag">
+              <div class="item-txt">
+                <a href="#">
+                  <h3 class="mb-3">Albania</h3>
+                  <p class="text-black mb-2"><strong>Population: </strong> 2,886,026</p>
+                  <p class="text-black mb-2"><strong>Region:</strong> Europe</p>
+                  <p class="text-black mb-2"><strong>Capital:</strong> Tirana</p>
+                </a>
+              </div>
+            </li>
+            <li class=" country-item">
+              <img src="../images/algeria-flag.jpg" height="160" alt=" Algier flag">
+              <div class="item-txt">
+                <a href="#">
+                  <h3 class="mb-3">Algeria</h3>
+                  <p class="text-black mb-2"><strong>Population: </strong> 40,400,000</p>
+                  <p class="text-black mb-2"><strong>Region:</strong> Africa</p>
+                  <p class="text-black mb-2"><strong>Capital:</strong> Algiers</p>
+                </a>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
